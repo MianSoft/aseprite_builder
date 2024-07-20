@@ -1,4 +1,4 @@
-name: Build and deploy Aseprite
+name: Build 和 deploy Aseprite
 
 on:
   workflow_dispatch:
@@ -67,7 +67,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
        matrix:
-         os: [windows-latest, ubuntu-latest, macOS-latest]
+         os: [windows-latest]
        fail-fast: false
     steps:
       - name: (Windows) Install dependencies
